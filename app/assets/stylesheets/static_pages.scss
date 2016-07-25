@@ -1,0 +1,61 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Navbar
+
+ul {
+    border: 1px solid orange;
+    background-color: orange;
+}
+li a {
+    color: black;
+}
+
+li:last-child {
+    border-right: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: black;
+    color:orange
+}
+.container-fluid{
+	 background-color: orange;
+	 border: none;
+}
+#abstand{
+	padding-top:30px;
+}
+
+//NAVBARENDE
+
+h1 {
+	font-size: 3em;
+	color: blue;
+	text-align: center;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+p {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 1em
+}
+.footer-social {
+	padding-top:13px;
+	text-align:center;
+}
