@@ -14,8 +14,8 @@
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
+      <tr :class => "crazy">
+        <h2 :class => "loco"><%= product.name %></h2>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
         <td><%= link_to 'Show', product %></td>
