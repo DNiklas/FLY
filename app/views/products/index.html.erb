@@ -7,7 +7,9 @@
       <div class="col-sm-2 col-md-4">
         <h1><%= product.name %></h1>
         <p><%= product.description %></p>
-        <%= image_tag(product.image_url, class: "img-responsive") %>
+        <% if product.image_url %>
+           <%= image_tag(product.image_url, class: "img-responsive") %>
+        <% end %>
         <p><%= product.color %></p>
         <strong><%= product.price %></strong>
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
