@@ -1,8 +1,21 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-
-<table>
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <h1><%= product.name %></h1>
+        <%= image_tag(product.image_url, class: "img-responsive") %>
+        <p><%= product.description %></p>
+        <p><%= product.color %></p>
+        <strong><%= product.price %></strong>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
+ <!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -14,19 +27,19 @@
   </thead>
 
   <tbody>
-    <% @products.each do |product| %>
+ <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
         <td><%= product.color %></td>
         <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td> 
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table>  -->
 
 <br>
 
