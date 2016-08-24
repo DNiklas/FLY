@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :products
-    get '/products/:id', to: 'products#show'
+    get '/products/:id' 
+    # , to: 'products#show'
 
   resources :orders, only: [:index, :show, :create, :destroy]
   get 'static_pages/about'
