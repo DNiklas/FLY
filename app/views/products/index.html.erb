@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
+    <div class="row">
+    <%=render @products%>
+    </div>
+  </div>
+<%= link_to 'New Product', new_product_path %>
 
-<h1>Products</h1>
+<!-- <h1>Products</h1>
 <div class="container-fluid">
   <div class="row">
   <% @products.each do |product| %>
     <%=render @products%>
   <% end %>
   </div>
-</div>
+</div> -->
 <!--  <table>
   <thead>
     <tr>
@@ -33,6 +38,6 @@
   </tbody>
 </table>  -->
 
-<br>
+<!-- <br>
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'New Product', new_product_path %> -->
